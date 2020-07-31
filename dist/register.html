@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+   <link rel="stylesheet" href="css/register.min.css">
+
+    <script src="js/require.js" async="true" defer data-main="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid clear" id="register">
+        <div class="">
+            <div class="layout">
+                <div class="logo">
+                    <!-- 小米的logo -->
+                    <img src="images/mi.png" alt="">
+                    <!-- <img src="./img/mi.png" alt=""> -->
+                </div>
+                <div class="title">
+                    <h4>注册小米帐号</h4>
+                </div>
+                <!-- 注册地区手机号 -->
+                <div class="regionPhone">
+                    <div class="region">国家/地区</div>
+                    <!-- 选择国家 -->
+                    <div class="country">
+                        <div class="country-select-icon">
+                            <p class="country-select">中国</p>
+                            <p class="country-icon"></p>
+                        </div>
+                        <div class="country-hidden">
+
+                        </div>
+                    </div>
+                    <div class="register-success">成功注册帐号后，国家/地区将不能被修改</div>
+                    <div class="panel-body">
+                        <div class="Phone">
+                            <div class="phone">手机号码</div>
+                            <div class="phone-number">
+                                <div>
+                                    <p>+86</p>
+                                    <i></i>
+                                </div>
+                                <input type="text" placeholder="请输入手机号码" id="PhoneNumber">
+                            </div>
+                            <span id="reminder"></span>
+                        </div>
+                        <!-- 密码 -->
+                        <div class="Password">
+                            <div class="password">密码</div>
+                            <div class="password-number">
+
+                                <input type="text" placeholder="请输入密码" id="passwordNumber">
+                            </div>
+                            <span id="passwordReminder"></span>
+                        </div>
+                        <div class="RePassword">
+
+                            <div class="rePassword">确认密码</div>
+                            <div class="rePassword-number">
+                                <input type="text" placeholder="请再次输入密码" id="rePasswordNumber">
+                            </div>
+                            <span id="rePasswordReminder"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="nowRegion">
+                    <span>立即注册</span>
+                </div>
+
+                <div class="privacy">
+                    已阅读并同意：小米
+                    <a href="https://static.account.xiaomi.com/html/agreement/user/zh_CN.html">
+                        用户协议
+                    </a>
+                    和
+                    <a href="https://privacy.mi.com/miaccount/zh_CN/">
+                        隐私政策
+                    </a>
+
+                </div>
+            </div>
+
+            <footer>
+                <div class="clearfix">
+
+                    <ul>
+                        <li><a href="">简体</a></li>
+                        <li><a href="">|</a></li>
+                        <li><a href="">繁体</a></li>
+                        <li><a href="">|</a></li>
+                        <li><a href="">English</a></li>
+                        <li><a href="">|</a></li>
+                        <li><a href="">常见问题</a></li>
+                    </ul>
+                </div>
+                <p>
+                    <span>小米公司版权所有-京ICP备10046444-</span>
+                    <a href="">
+                        <img src="images/record-icon.png" alt="">
+                        <!-- <img src="./img/record-icon.png" alt=""> -->
+                        京公网安备11010802020134号
+                    </a>
+                    -京ICP证110507号
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

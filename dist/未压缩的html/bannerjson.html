@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    var arr = [
+      {
+        title: ["有品推荐", "家用电器"],
+        broadside: [
+          // 有品推荐
+          {
+            subtitle: ["为你推荐 >", "精选专区 >"],
+            hot1: [
+              {
+                id: 0,
+                title: "空调",
+              },
+              {
+                id: 1,
+                title: "智能手表",
+              },
+              {
+                id: 2,
+                title: "耳机",
+              },
+              {
+                id: 3,
+                title: "电视机",
+              },
+              {
+                id: 4,
+                title: "行李箱",
+              },
+              {
+                id: 5,
+                title: "灯具",
+              }
+            ],
+            hots2: [
+              {
+                id: 0,
+                title: "回购榜单",
+              },
+              {
+                id: 1,
+                title: "吃喝到家",
+              },
+              {
+                id: 2,
+                title: "装修好物",
+              },
+              {
+                id: 3,
+                title: "夏日解暑",
+              },
+              {
+                id: 4,
+                title: "亲子时光",
+              },
+              {
+                id: 5,
+                title: "运动健身",
+              }
+            ]
+         
+          },
+          // 家用电器
+          {
+            subtitle: ["频道精选 >", "电视 >", "冰箱 >", "洗衣机 >"],
+            hot1: [
+              {
+                id: 0,
+                title: "热卖爆款",
+              },
+              {
+                id: 1,
+                title: "厨电新品",
+              },
+              {
+                id: 2,
+                title: "清凉家电",
+              },
+              {
+                id: 3,
+                title: "新品上市",
+              },
+              {
+                id: 4,
+                title: "米粉最爱",
+              }
+            ],
+            hots2: [
+              {
+                id: 0,
+                title: "小米电视5",
+              },
+              {
+                id: 1,
+                title: "Redmi电视",
+              },
+              {
+                id: 2,
+                title: "全面屏",
+              },
+              {
+                id: 3,
+                title: "32-40英寸",
+              },
+              {
+                id: 4,
+                title: "43英寸",
+              },
+              {
+                id: 5,
+                title: "50英寸",
+              },
+              {
+                id: 6,
+                title: "55-60英寸",
+              },
+              {
+                id: 7,
+                title: "65英寸及以上",
+              },
+              {
+                id: 8,
+                title: "激光电视",
+              },
+            ],
+            hots3: [
+              {
+                id: 0,
+                title: "两门冰箱",
+              },
+              {
+                id: 1,
+                title: "三门冰箱",
+              },
+              {
+                id: 2,
+                title: "对开门冰箱",
+              },
+              {
+                id: 3,
+                title: "十字四门冰箱",
+              },
+              {
+                id: 4,
+                title: "多门冰箱",
+              },
+              {
+                id: 5,
+                title: "小冰箱",
+              },
+              {
+                id: 6,
+                title: "冷柜/酒柜",
+              },
+              {
+                id: 7,
+                title: "米家冰箱",
+              },
+            ],
+            hots4: [
+              {
+                id: 0,
+                title: "烘洗一体机",
+              },
+              {
+                id: 1,
+                title: "滚筒洗衣机",
+              },
+              {
+                id: 2,
+                title: "波轮洗衣机",
+              },
+              {
+                id: 3,
+                title: "迷你洗衣机",
+              },
+              {
+                id: 4,
+                title: "烘干机",
+              },
+              {
+                id: 5,
+                title: "冰洗套装",
+              },
+            ]
+          }
+        ],
+      },
+      {
+        title: ["居家餐厨", "电视影音"],
+        broadside: [
+          // 居家餐厨
+          {
+            subtitle: ["爆款热卖 >", "家纺 >"],
+            hot1: [
+              {
+                id: 0,
+                title: "抗菌家纺",
+              },
+              {
+                id: 1,
+                title: "智能手表",
+              },
+              {
+                id: 2,
+                title: "耳机",
+              },
+              {
+                id: 3,
+                title: "电视机",
+              },
+              {
+                id: 4,
+                title: "行李箱",
+              },
+              {
+                id: 5,
+                title: "灯具",
+              }
+            ],
+            hots2: [
+              {
+                id: 0,
+                title: "回购榜单",
+              },
+              {
+                id: 1,
+                title: "吃喝到家",
+              },
+              {
+                id: 2,
+                title: "装修好物",
+              },
+              {
+                id: 3,
+                title: "夏日解暑",
+              },
+              {
+                id: 4,
+                title: "亲子时光",
+              },
+              {
+                id: 5,
+                title: "运动健身",
+              }
+            ]
+         
+          },
+          // 电视影音
+          {
+            subtitle: ["频道精选 >", "电视 >", "冰箱 >", "洗衣机 >"],
+            hot1: [
+              {
+                id: 0,
+                title: "热卖爆款",
+              },
+              {
+                id: 1,
+                title: "厨电新品",
+              },
+              {
+                id: 2,
+                title: "清凉家电",
+              },
+              {
+                id: 3,
+                title: "新品上市",
+              },
+              {
+                id: 4,
+                title: "米粉最爱",
+              }
+            ],
+            hots2: [
+              {
+                id: 0,
+                title: "小米电视5",
+              },
+              {
+                id: 1,
+                title: "Redmi电视",
+              },
+              {
+                id: 2,
+                title: "全面屏",
+              },
+              {
+                id: 3,
+                title: "32-40英寸",
+              },
+              {
+                id: 4,
+                title: "43英寸",
+              },
+              {
+                id: 5,
+                title: "50英寸",
+              },
+              {
+                id: 6,
+                title: "55-60英寸",
+              },
+              {
+                id: 7,
+                title: "65英寸及以上",
+              },
+              {
+                id: 8,
+                title: "激光电视",
+              },
+            ],
+            hots3: [
+              {
+                id: 0,
+                title: "两门冰箱",
+              },
+              {
+                id: 1,
+                title: "三门冰箱",
+              },
+              {
+                id: 2,
+                title: "对开门冰箱",
+              },
+              {
+                id: 3,
+                title: "十字四门冰箱",
+              },
+              {
+                id: 4,
+                title: "多门冰箱",
+              },
+              {
+                id: 5,
+                title: "小冰箱",
+              },
+              {
+                id: 6,
+                title: "冷柜/酒柜",
+              },
+              {
+                id: 7,
+                title: "米家冰箱",
+              },
+            ],
+            hots4: [
+              {
+                id: 0,
+                title: "烘洗一体机",
+              },
+              {
+                id: 1,
+                title: "滚筒洗衣机",
+              },
+              {
+                id: 2,
+                title: "波轮洗衣机",
+              },
+              {
+                id: 3,
+                title: "迷你洗衣机",
+              },
+              {
+                id: 4,
+                title: "烘干机",
+              },
+              {
+                id: 5,
+                title: "冰洗套装",
+              },
+            ]
+          }
+        ],
+      },
+      
+    ];
+
+    //一定要先去写数据结构，在数据结构中，如果你写错，能报错
+    var str = JSON.stringify(arr);
+    document.write(str);
+
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

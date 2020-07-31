@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/shoppingcar.min.css">
+
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/require.js" async="true" defer data-main="js/main"></script>
+
+</head>
+
+<body>
+    <div id="ShoppingCar">
+        <header class="container-fluid">
+            <nav class="container">
+                <ul class="r">
+                    <li><a href="http://localhost/php/Login/login.html">登录</a></li>
+                    <li><a href="http://localhost/php/Login/register.html">注册</a> <span>|</span></li>
+                    <li><a href="#">帮助中心</a> <span>|</span></li>
+                    <li> <a href="#">下载APP <i class="iconfont icon-shouji phone"></i></a> <span>|</span></li>
+                    <li><a href="#">资质证照&nbsp;/&nbsp;协议规则 <i class="iconfont icon-down down"></i></a> </i></span>
+                        <ul class="rule">
+                            <li><a href="#">资质证照</a> </li>
+                            <li><a href="#">协议规则</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 头部第二部分 -->
+        <div class="header-top container clear">
+            <div class="m-logo"></div>
+            <div class="header-right ">
+                <div class="search-form ">
+                    <div class=" magnifying"><a href="#" class="iconfont icon-sousuo"></a></div>
+                    <div class="search-input"><input type="text" placeholder="搜一搜"> </div>
+                </div>
+
+                <!-- 顶部的购物车 -->
+                <div class="shopping-car ">
+                    <a href="#" class="iconfont icon-dilanxianxingiconyihuifu_huabanfuben">
+                    </a>
+                    <!-- 购物车中商品的数量 -->
+                    <div class="sc_num">
+                      
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 购物车列表 -->
+        <div class="container" id="shop-list">
+            <div class="shop-title container">
+                <a href="detail.html">抢购页 > </a>
+                <span>购物车</span>
+            </div>
+            <div class="shop-details">
+                <!-- 抬头 -->
+                <div class="shop-details-title">
+                    <ul>
+                        <li>全选</li>
+                        <li>商品信息</li>
+                        <li>单价</li>
+                        <li>数量</li>
+                        <li>金额</li>
+                        <li>操作</li>
+                    </ul>
+                </div>
+                <!-- 每个商品 -->
+
+                <ul class="everyone clear">
+                    <!-- <li id="">
+                        <div class="select">
+                            <a class="select-icon"></a>
+                        </div>
+                        <div class="merchandise">
+                            <img src="images/seckill/seckill-1.jpg" alt="">
+                            <p>吉吾 银铸金手镯 元系...</p>
+                        </div>
+
+                        <div class="price">
+                            <span>¥</span>
+                            <span class="money">888</span>
+                        </div>
+                        <div class="more-or-less">
+                            <div class="less">-</div>
+                            <div class="number">1</div>
+                            <div class="more">+</div>
+                        </div>
+                        <div class="add">
+                            <span>¥</span>
+                            <span class="addNum">888</span>
+                        </div>
+                        <div class="del">
+                            <a class="del-icon"></a>
+                        </div>
+                    </li> -->
+
+                </ul>
+
+                <div class="bottom-total">
+                    <div class="total-box">
+                        <a class="select-text"></a>
+                        <span>全选</span>
+                        <span>已选</span>
+                        <!-- 被选择的数量 -->
+                        <span class="Selected ">0</span>
+                        <span>件</span>
+                    </div>
+                    <div class="total-price">
+                        <span>合计：￥0.00</span>
+                    </div>
+                    <div class="checkout">
+
+                        <span>去结算</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 底部 -->
+        <footer class="container-fluid " id="footer">
+            <div class="container official">
+                <div class="pic">
+                    <img src="images/mi-logo.png" alt="">
+                    <a href=""><img src="images/bottom.png" alt=""></a>
+                </div>
+                <div class="content">
+                    <p class="record">
+                        <span>©xiaomiyoupin.com</span>
+                        <span>苏B2-20180351 苏ICP备18025642号-1</span>
+                        <img src="images/record-icon.png" alt="">
+                        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010502010244">苏公网安备
+                            32010502010244号</a>
+                    </p>
+                    <p class="callMe">
+                        <span>企业名称：有品信息科技有限公司</span>
+                        <span><a href="">关于我们</a></span>
+                        <span><a href="">入驻有品</a></span>
+                        <span><a href="">知识产权侵权投诉</a></span>
+                    </p>
+                    <p>
+                        <a href="">小米有品平台运营主体变更公告</a>
+                    </p>
+                    <p>
+                        <span>
+                            南京市建邺区白龙江东街8号3栋9层
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 右边固定的部分 -->
+        <div id="fixed">
+            <ul>
+                <li>
+                    <a href=""></a>
+                    <span>联系客服</span>
+                </li>
+                <li>
+                    <a href=""></a>
+
+                    <p>下载</p>
+
+                </li>
+                <li>
+                    <a href=""></a>
+                    <p>新人有礼</p>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <p>关注微信</p>
+
+                </li>
+                <li class="top">
+                    <a href=""></a>
+                    <p>回到顶部</p>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

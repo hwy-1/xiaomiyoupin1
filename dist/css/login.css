@@ -1,0 +1,238 @@
+@charset "UTF-8";
+html,
+body,
+ol,
+ul,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+input,
+select,
+textarea,
+table,
+td,
+tr,
+th,
+fieldset {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 12px; }
+
+fieldset,
+img {
+  border: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+i,
+em,
+u {
+  font-weight: normal;
+  font-style: normal; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  vertical-align: middle; }
+
+/*css reset*/
+body {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 14px; }
+
+/*css common*/
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0px; }
+
+.clear {
+  zoom: 1; }
+
+/*版心*/
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  position: relative; }
+
+/*通栏*/
+.container-fluid {
+  position: relative; }
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  font-weight: 400;
+  display: flex; }
+
+#login {
+  width: 100%;
+  height: 100%; }
+  #login .layout {
+    margin: 0 auto;
+    width: 786px;
+    height: 544px;
+    padding: 0 34px 30px 34px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #login .layout .logo {
+      margin-top: 25px;
+      padding-bottom: 40px; }
+      #login .layout .logo img {
+        width: 49px;
+        height: 48px; }
+    #login .layout .title {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 10px; }
+    #login .layout .PhoneId .PhoneId-number {
+      margin-bottom: 14px;
+      border: 1px solid #e0e0e0; }
+      #login .layout .PhoneId .PhoneId-number input {
+        width: 326px;
+        height: 22px;
+        line-height: 22px;
+        padding: 13px 16px 13px 16px;
+        height: 20px;
+        line-height: 20px;
+        padding: 10px;
+        width: 236px;
+        outline-style: none;
+        border: 0; }
+    #login .layout .RePass .rePass-number {
+      margin-bottom: 14px;
+      border: 1px solid #e0e0e0; }
+      #login .layout .RePass .rePass-number input {
+        width: 326px;
+        height: 22px;
+        line-height: 22px;
+        padding: 13px 16px 13px 16px;
+        height: 20px;
+        line-height: 20px;
+        padding: 10px;
+        width: 236px;
+        outline-style: none;
+        border: 0; }
+    #login .layout .nowLogin {
+      width: 328px;
+      height: 40px;
+      line-height: 40px;
+      background-color: #ff6700;
+      text-align: center;
+      border: 1px solid rgba(186, 186, 186, 0.3);
+      color: #fff;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-bottom: 10px; }
+    #login .layout .forget {
+      color: #757575;
+      font-size: 14px; }
+      #login .layout .forget a {
+        color: #757575; }
+    #login .layout .another {
+      padding-top: 50px; }
+      #login .layout .another p {
+        font-size: 14px;
+        color: #b0b0b0;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 5px; }
+      #login .layout .another .anotherLogo {
+        margin-top: 15px;
+        display: flex; }
+        #login .layout .another .anotherLogo a {
+          display: block;
+          margin: 0 12px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%; }
+          #login .layout .another .anotherLogo a i {
+            display: block;
+            margin: 4px 5px;
+            width: 18px;
+            height: 18px; }
+          #login .layout .another .anotherLogo a:nth-child(1) {
+            background-color: #0288d1; }
+            #login .layout .another .anotherLogo a:nth-child(1) .QQ {
+              background-image: url("../images/another-logo.png");
+              background-position: -19px 0; }
+          #login .layout .another .anotherLogo a:nth-child(2) {
+            background-color: #d32f2f; }
+            #login .layout .another .anotherLogo a:nth-child(2) .weibo {
+              background-image: url("../images/another-logo.png");
+              background-position: -38px 0; }
+          #login .layout .another .anotherLogo a:nth-child(3) {
+            background-color: #0ae; }
+            #login .layout .another .anotherLogo a:nth-child(3) .zhifubao {
+              background-image: url("../images/another-logo.png");
+              background-position: -57px 0; }
+          #login .layout .another .anotherLogo a:nth-child(4) {
+            background-color: #00d20d; }
+            #login .layout .another .anotherLogo a:nth-child(4) .weixin {
+              background-image: url("../images/another-logo.png");
+              background-position: -83px 0;
+              width: 24px;
+              margin-top: 6px;
+              margin-left: 2px; }
+  #login footer {
+    margin: 0 auto;
+    width: 786px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #9d9d9d;
+    font-size: 14px; }
+    #login footer a {
+      color: #9d9d9d; }
+    #login footer .clearfix ul {
+      height: 19px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px; }
+      #login footer .clearfix ul li a {
+        color: #9d9d9d;
+        padding: 0 5px; }
